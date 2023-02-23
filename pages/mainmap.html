@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>myfavpub</title>
+  <style>
+    body {
+      width: 960px;
+      margin: 0 auto;
+    }
+    .top { height: 100px; background-color: #14A236;}
+    .topmenu1{
+      transform: scale(1.0);
+      transition: transform .3s;
+      margin-top: 20px;
+      margin-left: 3%;
+      height: 50px;
+      width: 50px;
+      background-image: url("../image/train.png");
+      background-size: 100%;
+      background-position: center;
+      float:left;
+    }
+    .topmenu1:hover{
+      transform: scale(1.2);
+      transition: transform .3s;
+      margin-top: 20px;
+      margin-left: 3%;
+      height: 50px;
+      width: 50px;
+      background-image: url("../image/train.png");
+      background-size: 100%;
+      background-position: center;
+      float:left;
+    }
+    .topmenu2{
+      transform: scale(1.0);
+      transition: transform .3s;
+      margin-top: 22px;
+      margin-left: 20px;
+      height: 50px;
+      width: 50px;
+      background-image: url("../image/YSblack.png");
+      background-size: 100%;
+      background-position: center;
+      float:left;
+    }
+    .topmenu2:hover{
+      transform: scale(1.2);
+      transition: transform .3s;
+      margin-top: 22px;
+      margin-left: 20px;
+      height: 50px;
+      width: 50px;
+      background-image: url("../image/YSblack.png");
+      background-size: 100%;
+      background-position: center;
+      float:left;
+    }
+    .topmenu3{
+      transform: scale(1.0);
+      transition: transform .3s;
+      margin-top: 22px;
+      margin-left: 18px;
+      height: 50px;
+      width: 50px;
+      background-image: url("../image/GMblack.png");
+      background-size: 100%;
+      background-position: center;
+      float:left;
+    }
+    .topmenu3:hover{
+      transform: scale(1.2);
+      transition: transform .3s;
+      margin-top: 22px;
+      margin-left: 18px;
+      height: 50px;
+      width: 50px;
+      background-image: url("../image/GMblack.png");
+      background-size: 100%;
+      background-position: center;
+      float:left;
+    }
+    .topmenu4{
+      transform: scale(1.0);
+      transition: transform .3s;
+      margin-top: 22px;
+      margin-left: 18px;
+      height: 50px;
+      width: 50px;
+      background-image: url("../image/TBblack.png");
+      background-size: 100%;
+      background-position: center;
+      float:left;
+    }
+    .topmenu4:hover{
+      transform: scale(1.2);
+      transition: transform .3s;
+      margin-top: 22px;
+      margin-left: 18px;
+      height: 50px;
+      width: 50px;
+      background-image: url("../image/TBblack.png");
+      background-size: 100%;
+      background-position: center;
+      float:left;
+    }
+    .topmenu5{
+      transform: scale(1.0);
+      transition: transform .3s;
+      margin-top: 22px;
+      margin-left: 18px;
+      height: 50px;
+      width: 50px;
+      background-image: url("../image/JARblack.png");
+      background-size: 100%;
+      background-position: center;
+      float:left;
+    }
+    .topmenu5:hover{
+      transform: scale(1.2);
+      transition: transform .3s;
+      margin-top: 22px;
+      margin-left: 18px;
+      height: 50px;
+      width: 50px;
+      background-image: url("../image/JARblack.png");
+      background-size: 100%;
+      background-position: center;
+      float:left;
+    }
+    .mainback { 
+      margin-top: 100px;
+      height: 600px;
+      background-image: url("../image/roadmap-nonamever.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+
+    }
+    .topblank {
+      height: 275px;
+    }
+    .mypublist{
+      margin-top: 10px;
+      line-height: 20px;
+      font-size: 50px;
+      font-family: "휴먼모음T";
+      text-align: center;
+    }
+    .clickplese{
+      line-height: 20px;
+      font-size: 50px;
+      font-family: "휴먼모음T";
+      text-align: center;
+    }
+    .blank1{
+      height: 100px; width : 150px; float:left;
+    }
+    .blank2{
+      height: 100px; width : 50px; float:left;
+    }
+    .blank3{
+      height: 100px; width : 150px; float:left;
+    }
+    .blankright{
+      height: 100px; width : 70px; float:left;
+    }
+    .youseong {
+      transform: scale(1.0);
+      transition: transform .3s; 
+      height: 100px;
+      width: 100px;
+      background-image: url("../image/YS.png");
+      background-size: 100%;
+      float:left;
+      cursor: url(../image/cursor.cur) 4 5, auto;
+    }
+    .youseong:hover {
+      transform: rotate(4deg) scale(1.5);
+      transition: transform .3s; 
+      height: 100px;
+      width: 100px;
+      background-image: url("../image/YS.png");
+      background-size: 100%;
+      float:left;
+      cursor: url(../image/cursor.cur) 4 5, auto;
+    }
+    .galma {
+      transform: scale(1.0);
+      transition: transform .3s;  
+      height: 100px;
+      width: 100px;
+      background-image: url("../image/GM.png");
+      background-size: 100%;
+      float:left;
+      cursor: url(../image/cursor.cur) 4 5, auto;
+    }
+    .galma:hover {
+      transform: rotate(-4deg) scale(1.5);
+      transition: transform .3s;  
+      height: 100px;
+      width: 100px;
+      background-image: url("../image/GM.png");
+      background-size: 100%;
+      float:left;
+      cursor: url(../image/cursor.cur) 4 5, auto;
+    }
+    .tanbang { 
+      transform: scale(1.0);
+      transition: transform .3s;
+      height: 100px;
+      width: 100px;
+      background-image: url("../image/TB.png");
+      background-size: 100%;
+      float:left;
+      cursor: url(../image/cursor.cur) 4 5, auto;
+    }
+    .tanbang:hover { 
+      transform: rotate(4deg) scale(1.5);
+      transition: transform .3s;
+      height: 100px;
+      width: 100px;
+      background-image: url("../image/TB.png");
+      background-size: 100%;
+      float:left;
+      cursor: url(../image/cursor.cur) 4 5, auto;
+    }
+    .jar { 
+      transform: scale(1.0);
+      transition: transform .3s;
+      height: 100px;
+      width: 100px;
+      background-image: url("../image/JAR.png");
+      background-size: 100%;
+      float:left;
+      cursor: url(../image/cursor.cur) 4 5, auto;
+    }
+    .jar:hover { 
+      transform: rotate(-4deg) scale(1.5);
+      transition: transform .3s;
+      height: 100px;
+      width: 100px;
+      background-image: url("../image/JAR.png");
+      background-size: 100%;
+      float:left;
+      cursor: url(../image/cursor.cur) 4 5, auto;
+    }
+  </style>
+</head>
+<body>
+  <div class = "top">
+    <a href="./mainmap.html"><div class = "topmenu1"></div></a>
+    <a href="./youseong.html"><div class = "topmenu2"></div></a>
+    <a href="./galma.html"><div class = "topmenu3"></div></a>
+    <a href="./tanbang.html"><div class = "topmenu4"></div></a>
+    <a href="./jar.html"><div class = "topmenu5"></div></a>
+  </div>
+  <div class = "mainback">
+    <div class = "topblank"> 
+      <p class = "mypublist"> 대전 술집 노선도</p>
+
+    </div>
+      <div class = "blank1"></div>
+      <a href="./youseong.html">
+        <div class = "youseong"></div>
+      </a>
+      <div class = "blank2"></div>
+      <a href="./galma.html">
+        <div class = "galma"></div>
+      </a>
+      <div class = "blank2"></div>
+      <a href="./tanbang.html">
+        <div class = "tanbang"></div>
+      </a>
+      <div class = "blank3"></div>
+      <a href="./jar.html">
+        <div class = "jar"></div>
+      </a>
+      <div class = "blankright"></div>
+    </div>
+  </div>
+</body>
+</html>

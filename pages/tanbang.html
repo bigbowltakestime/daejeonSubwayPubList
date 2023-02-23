@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>myfavpub</title>
+  <style>
+    body {
+      width: 960px;
+      margin: 0 auto;
+      background-color: beige;
+
+    }
+    .top { height: 100px; background-color:#14A236;}
+    .upper {height: 350px; background-color: beige;}
+    .lower {height: 450px; background-color: beige;}
+    .topmenu1{
+      transform: scale(1.0);
+      transition: transform .3s;
+      margin-top: 20px;
+      margin-left: 3%;
+      height: 50px;
+      width: 50px;
+      background-image: url("../image/train.png");
+      background-size: 100%;
+      background-position: center;
+      float:left;
+    }
+    .topmenu1:hover{
+      transform: scale(1.2);
+      transition: transform .3s;
+      margin-top: 20px;
+      margin-left: 3%;
+      height: 50px;
+      width: 50px;
+      background-image: url("../image/train.png");
+      background-size: 100%;
+      background-position: center;
+      float:left;
+    }
+    .topmenu2{
+      transform: scale(1.0);
+      transition: transform .3s;
+      margin-top: 22px;
+      margin-left: 20px;
+      height: 50px;
+      width: 50px;
+      background-image: url("../image/YSblack.png");
+      background-size: 100%;
+      background-position: center;
+      float:left;
+    }
+    .topmenu2:hover{
+      transform: scale(1.2);
+      transition: transform .3s;
+      margin-top: 22px;
+      margin-left: 20px;
+      height: 50px;
+      width: 50px;
+      background-image: url("../image/YSblack.png");
+      background-size: 100%;
+      background-position: center;
+      float:left;
+    }
+    .topmenu3{
+      transform: scale(1.0);
+      transition: transform .3s;
+      margin-top: 22px;
+      margin-left: 18px;
+      height: 50px;
+      width: 50px;
+      background-image: url("../image/GMblack.png");
+      background-size: 100%;
+      background-position: center;
+      float:left;
+    }
+    .topmenu3:hover{
+      transform: scale(1.2);
+      transition: transform .3s;
+      margin-top: 22px;
+      margin-left: 18px;
+      height: 50px;
+      width: 50px;
+      background-image: url("../image/GMblack.png");
+      background-size: 100%;
+      background-position: center;
+      float:left;
+    }
+    .topmenu4{
+      transform: scale(1.0);
+      transition: transform .3s;
+      margin-top: 22px;
+      margin-left: 18px;
+      height: 50px;
+      width: 50px;
+      background-image: url("../image/TBblack.png");
+      background-size: 100%;
+      background-position: center;
+      float:left;
+    }
+    .topmenu4:hover{
+      transform: scale(1.2);
+      transition: transform .3s;
+      margin-top: 22px;
+      margin-left: 18px;
+      height: 50px;
+      width: 50px;
+      background-image: url("../image/TBblack.png");
+      background-size: 100%;
+      background-position: center;
+      float:left;
+    }
+    .topmenu5{
+      transform: scale(1.0);
+      transition: transform .3s;
+      margin-top: 22px;
+      margin-left: 18px;
+      height: 50px;
+      width: 50px;
+      background-image: url("../image/JARblack.png");
+      background-size: 100%;
+      background-position: center;
+      float:left;
+    }
+    .topmenu5:hover{
+      transform: scale(1.2);
+      transition: transform .3s;
+      margin-top: 22px;
+      margin-left: 18px;
+      height: 50px;
+      width: 50px;
+      background-image: url("../image/JARblack.png");
+      background-size: 100%;
+      background-position: center;
+      float:left;
+    }
+    .leftarrow{
+      margin-top: 125px;
+      margin-left: 20px;
+      height: 100px;
+      width: 20px;
+      background-image: url("../image/leftarrow.png");
+      background-size: 100%;
+      background-position: center;
+      float:left;
+      background-repeat: no-repeat;
+    }
+
+    .pic { 
+      margin-top: 35px;
+      margin-left: 7px;
+      height: 300px;
+      width: 300px;
+      background-image: url("../image/tbres.jpg");
+      background-size: 100%;
+      background-position: center;
+      float:left;
+    }
+    .rightarrow{
+      margin-top: 125px;
+      margin-left: 8px;
+      height: 100px;
+      width: 20px;
+      background-image: url("../image/rightarrow.png");
+      background-size: 100%;
+      background-position: center;
+      float:left;
+      background-repeat: no-repeat;
+    }
+    .info {
+      margin-top: 10px;
+      margin-right : 45px;
+      height: 350px;
+      width: 500px;
+      float:right;
+      line-height: 10px;
+      background-color: Blanchedalmond;
+    }
+    .station { 
+      font-size: 50px;
+      font-family: "휴먼둥근헤드라인"; 
+      float:left;
+    }
+    .pubname { 
+      font-size: 100px;
+      font-family: "휴먼둥근헤드라인";
+      text-align: center;
+      
+    }
+    .titletop{
+      margin-top: 0px;
+      display: flex;
+      justify-content: center;
+    }
+    .titlepic{
+      margin-top: 20px;
+      margin-left: 10px;
+      display: flex;
+      justify-content: center;
+      height: 70px;
+      width: 70px;
+      background-image: url("../image/TB.png");
+      background-size: 100%;
+      background-position: center;
+      float:left;
+    }
+    .pubnamecover{
+      display: flex;
+      justify-content: center;
+      height: 180px;
+    }
+    .lowerbox{
+      margin-top: 30px;
+      margin-left: 40px;
+      height: 450px;
+      width: 875px;
+      background-color: Blanchedalmond;
+    }
+    .lowerleft{
+      float: left;
+      margin-top: 20px;
+      margin-left: 20px;
+      height: 410px;
+      width: 300px;
+      background-color: beige;
+    }
+    .lowerlefttxt{
+      line-height: 15px;
+      font-size: 20px;
+      font-family: "휴먼모음T";
+      text-align: center;
+    }
+    .lowerright{
+      margin-left: 30px;
+      margin-top: 20px;
+      height: 410px;
+      width: 500px;
+      float: left;
+      line-height: 30px;
+      font-size: 20px;
+      font-family: "휴먼모음T";
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <div class = "top">
+    <a href="./mainmap.html"><div class = "topmenu1"></div></a>
+    <a href="./youseong.html"><div class = "topmenu2"></div></a>
+    <a href="./galma.html"><div class = "topmenu3"></div></a>
+    <a href="./tanbang.html"><div class = "topmenu4"></div></a>
+    <a href="./jar.html"><div class = "topmenu5"></div></a>
+  </div>
+  <div class = "upper">
+    <a href="./tanbang4.html"><div class = "leftarrow"></div></a>
+    <div class = "pic"></div>
+    <a href="./tanbang2.html"><div class = "rightarrow"></div></a>
+    <div class = "info">
+      <div class = "titletop">
+        <div class = "titlepic"></div>
+        <p class = "station"> 탄방역 </p>
+      </div>
+      <div class = "pubnamecover">
+        <p class = "pubname"> 오리진 </p>
+      </div>  
+    </div>
+  </div>
+  <div class = "lower">
+    <div class = "lowerbox">
+      <div class = "lowerleft">
+        <div class = "lowerlefttxt">
+          <br>
+          <p>주소 : 대전 서구</p>
+          <p>문정로122번길 34</p>
+          <br>
+          <p>메뉴</p>
+          <p>모둠사시미(1인) : 23,000원</p>
+          <p>고등어봉초밥(8pcs) : 20,000원</p>
+          <p>이소베마끼 : 17,000원</p>
+          <p>후토마끼(5pcs) : 14,000원</p>
+          <p>단새우 단품사시미 : 27,000원</p>
+          <p>전복파스타 : 18,000원</p>
+
+      </div>
+    </div>
+    <div class = "lowerright">
+      <br>
+      <p>[설명]</p>
+      <p> 자꾸 해산물이 나와서 미안하지만 개인 취향이라 어쩔 수 없다.</p>
+      <p> 친구추천으로 알게되었는데 여기는 무조건 웨이팅이라 돈이 있어도 먹기 힘든 술집이다. 그렇기에 가고싶다면 무조건 일찍, 가능하다면 오픈런을 하자.</p>
+      <p> 술집 크기도 적당하고 분위기도 좋다. 가기만 한다면 술은 당연히 쭉쭉 들어간다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
